@@ -1,0 +1,50 @@
+nav {
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+}
+
+.gradInit {
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+}
+
+.gradTestimonials {
+  background-image: linear-gradient(
+    140deg,
+    #eadedb 0%,
+    #bc70a4 50%,
+    #bfd641 75%
+  );
+}
+
+.accordion {
+  width: 100%;
+  overflow: hidden;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+}
+
+.accordion-title {
+  display: block;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+input[name="accordion"]:checked + .accordion-title + .accordion-content {
+  max-height: 500px;
+}
+
+.form {
+  flex-direction: column;
+}
